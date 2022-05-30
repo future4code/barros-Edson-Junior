@@ -161,16 +161,19 @@ p {
 
 .sci {
     position: absolute;
-    left: 100px;
+    right: 0;
+    left: 100;
     bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
 .sci li {
-    margin-right: 10px;
+    margin-right: 20px;
     list-style: none;
 }
 
@@ -187,6 +190,7 @@ p {
 .titulo {
     width: 100%;
     text-align: center;
+    
 }
 
 .titulo h2 {
@@ -200,7 +204,6 @@ p {
 .titulo p {
     max-width: 700px;
     display: inline-block;
-    color: white;
 }
 
 .titulo h2::before {
@@ -211,11 +214,43 @@ p {
     bottom: -10px;
     width: 60px;
     height: 4px;
-    background: #00bcd4;
+    background: #000;
+}
+
+.titulo.branco h2,
+.titulo.branco p{
+    color: #fff;
+}
+
+.titulo.branco h2::before {
+    background: #fff;
 }
 
 .sobre {
     background: #000;
+}
+
+.sobre .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.sobre .content .textBx {
+    min-width: 49%;
+    width: 49%;
+}
+
+.sobre .content .textBx p {
+    color: #fff;
+}
+
+.sobre .content .imgbx {
+    margin-left: 40px;
+}
+
+.sobre .content .imgbx img {
+    max-width: 100%;
 }
 
 
@@ -229,4 +264,240 @@ p {
     color: #000;
     background: none;
 }
+
+.habilidades .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.habilidades .content .habilidadesBx {
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px;
+    transition: 0.5s;
+    text-align: center;
+    background: #d7eaf7;
+
+}
+
+.habilidades .content .habilidadesBx:hover {
+    background: #000;
+
+}
+
+.habilidades .content .habilidadesBx img {
+    max-width: 80px;
+    transition: 0.5s;
+}
+
+.habilidades .content .habilidadesBx:hover img {
+    filter: invert(1);
+}
+
+.habilidades .content .habilidadesBx h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.habilidades .content .habilidadesBx:hover h2 {
+    color: #fff;
+}
+
+
+.habilidades .content .habilidadesBx p {
+    margin: 0;
+    transition: 0.5s;
+}
+
+.habilidades .content .habilidadesBx:hover p {
+    color: #fff;
+}
+
+
+
+
+
+.projetos {
+    background: #000;
+}
+
+.projetos .content h2 {
+    color: #000;
+    background: none;
+    font-size: 1.5em;
+}
+
+.projetos .content p {
+    color: #000;
+    background: none;
+}
+
+.projetos .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projetos .content .projetosBx {
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px 75px;
+    transition: 0.5s;
+    text-align: center;
+    background: #fff;
+
+}
+
+.projetos .content .projetosBx:hover {
+    background: #d7eaf7;
+
+}
+
+.projetos .content .projetosBx img {
+    max-width: 80px;
+    transition: 0.5s;
+}
+
+
+
+.projetos .content .projetosBx h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.projetos .content .projetosBx:hover h2 {
+    color: #000;
+}
+
+
+.projetos .content .projetosBx p {
+    margin: 0;
+    transition: 0.5s;
+}
+
+.projetos .content .projetosBx:hover p {
+    color: #000;
+}
+
+
+.projetos .titulo {
+    color: #fff;
+}
+
+
+.projetos .titulo h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #fff;
+}
+
+.projetos .content .projetosBx:hover img {
+    transform: scale(1.5);
+}
+
+
+
+.contato {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contato .formulario {
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+
+}
+
+.contato .formulario .row {
+    width: 100%;
+    display: flex;
+}
+
+.contato .formulario .row .col50 {
+    width: 50%;
+    margin: 10px;
+
+
+}
+
+.contato .formulario .row .col100 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    
+
+}
+
+.contato .formulario .row input,
+.contato .formulario .row textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111 ;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+
+.contato .formulario .row textarea {
+    height: 100px;
+}
+
+
+.contato .formulario .row input[type="submit"]{
+    background: #00bcd4;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+
+.copyright {
+    color: #fff;
+    background: #111;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+@media (max-width: 991px) {
+    .banner .imgSidebar {
+        display: none;
+    }
+    .banner .contentBx, .sidebar
+}
+
+
+
+
+
 
