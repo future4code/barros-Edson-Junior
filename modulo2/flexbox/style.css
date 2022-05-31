@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*- Rosa escuro: `mediumvioletred`
+- Rosa claro: `#f2d0e0`
+- Sombra do card: `darkgray`*/
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: mediumvioletred;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: mediumvioletred;
+    padding: 10px;
+    height: 20px;
+}
+
+.cabecalho .itenscabecalho {
+    display: flex;
+}
+
+.cabecalho .itenscabecalho button {
+    position: absolute;
+    right: 10px;
+}
+
+.cabecalho .itenscabecalho h4{
+    position: absolute;
+    left: 40px;
+}
+
+
+.conteudo {
+    display: flex;
+}
+
+
+
+.menuLateral {
+    background-color: #f2d0e0 ;
+    display: flex;
+    width: 300px;
+    height: 830px;
+    justify-content: left;
+    position: absolute;
+}
+
+
+
+
+
+
+.menuLateral .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.menuLateral .menu li {
+    list-style: none;
+    position: relative;
+    left: 10px;
+    margin-top: 20px;
+    width: 60px;
+}
+
+.menuLateral .menu .itensmenu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+
+
+
+.menuLateral .menu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.menuLateral .menu2 li {
+    list-style: none;
+    position: relative;
+    margin-top: 20px;
+    width: 60px;
+    text-transform: uppercase;
+}
+
+
+.menuLateral .menu2 .nomesmenu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+.menuLateral .menu3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 280px;
+    
+
+}
+
+.menuLateral .menu3 li {
+    list-style: none;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+.todososbolos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 300px; 
+    
+}
+
+.todososbolos .boxbolos {
+    width: 260px;
+    margin: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    
+}
+
+p, h2 {
+    text-align: center;
+    padding: 10px;
+}
