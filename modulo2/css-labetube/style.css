@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 12fr 1fr;
+    padding: 10px;
+    background-color: rgb(218, 125, 4);
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.rodape {
+    display: grid;
+    background-color: rgb(75, 73, 73);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape p {
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    justify-items: center;
+    margin: 30px;
+    
+
+}
+
+.container .boxVideo {
+    width: 350px;
+    border: 2px solid rgb(72, 165, 80);
+    margin: 20px;
+  
+}
+
+
+.container .boxVideo img {
+    width: 350px;
+    height: 250px
+}
+
+.container .boxVideo p {
+    margin: 15px 5px;
+}
+
+
+main {
+    display: grid;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.player {
+    width: 1080px;
+}
