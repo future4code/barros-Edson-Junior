@@ -2,6 +2,16 @@ import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import CardPequeno from './components/CardPequeno/CardPequeno';
+
+import Perfil from './perfil.JPG';
+import Resultante from './resultante.png';
+import TecGraf from './tecgraf.png';
+import Email from './email.png';
+import Endereco from './endereco.png'
+
+
+
 
 function App() {
   return (
@@ -9,9 +19,9 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
-          nome="Astrodev" 
-          descricao="Oi, eu sou o Astrodev. Sou o chefe dos alunos da Labenu. Adoro pedir e-mails na sexta-feira e esperar os alunos responderem só para responder com uma bronca e dar mais trabalho para eles."
+          imagem= {Perfil} 
+          nome="Edson Almeida" 
+          descricao="Oi, eu sou o Edson. Sou designer e estudante de programação na Labenu. Trabalho com livros e gosto muito de pedalar nos momentos livres."
         />
         
         <ImagemButton 
@@ -20,18 +30,61 @@ function App() {
         />
       </div>
 
+
+      <div className="page-section-container">
+
+        <CardPequeno 
+        
+          icone = {Email}
+          dado = "E-mail:"
+          descricao = "ed.junior@ymail.com"
+        
+        />
+
+        
+        <CardPequeno 
+        
+          icone = {Endereco}
+          dado = "Endereço:"
+          descricao = "Rua Edinho"
+      
+        />
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
-          nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
+          imagem= {Resultante} 
+          nome="Resultante" 
+          descricao="Estagiário de design, onde fui designado para criar cenários e artes diversas para realização de eventos. Utilização
+          de programas de modelagem 3d e renderização como SolidWorks, SketchUp, Rhinoceros, Lumion e Keyshot." 
         />
         
         <CardGrande 
-          imagem="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0-768x768.png" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
+          imagem={TecGraf} 
+          nome="TecGraf" 
+          descricao="Monitor do Stand Petrobrás-TecGraf/PUC-Rio no evento Rio Oil and Gas. Apresentação na
+          área de Manufatura Aditiva com foco em impressões por Fused Deposition Modeling em
+          diferentes materiais; Operação de scanner e impressora 3d." 
         />
       </div>
 
