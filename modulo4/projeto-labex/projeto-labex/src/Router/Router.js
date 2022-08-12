@@ -14,12 +14,12 @@ export default function Router() {
         <BrowserRouter>
             <Routes>
                 <Route index element = { <HomePage/> } />
-                <Route path = "listTrip" element = { <ListTripPage/> } />
-                <Route path = "applicationForm" element = { <ApplicationFormPage/> } />
-                <Route path = "login" element = { <LoginPage/> } />
-                <Route path = "admin" element = { <AdminHomePage/> } />
-                <Route path = "tripDetails" element = { <TripDetailsPage/> } />
-                <Route path = "createTrip" element = { <CreateTripPage/> } />
+                <Route path = "/listtrip" element = { <ListTripPage/> } />
+                <Route path = "/applicationform" element = { <ApplicationFormPage/> } />
+                <Route path = "/login" element = { <LoginPage/> } />
+                <Route path = "/admin" element = { <AdminHomePage/> } />
+                <Route path = "/tripdetails" element = { <TripDetailsPage/> } />
+                <Route path = "/createtrip" element = { <CreateTripPage/> } />
             </Routes>
         </BrowserRouter>
     </section>
